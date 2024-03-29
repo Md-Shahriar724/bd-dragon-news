@@ -2,8 +2,16 @@ import { Button } from "keep-react";
 import { SignIn } from "phosphor-react";
 import profile from '../../assets/user.png'
 import { NavLink } from "react-router-dom";
+// import { useContext } from "react";
+// import { AuthContext } from "../../Provider/AuthProvider";
+
 
 const Navbar = () => {
+
+
+  
+
+
   return (
     <div>
       <div className="flex justify-between my-4 items-center">
