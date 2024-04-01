@@ -45,9 +45,10 @@ const gitHubLogin = ()=>{
 
 
 useEffect(()=>{
- const unSubscribe = onAuthStateChanged(auth, (user)=>{
-    setUsers(user)
+ const unSubscribe = onAuthStateChanged(auth, (currentUser)=>{
+    setUsers(currentUser)
     setLoading(false)
+    console.log('this is onAuthStateChange', currentUser)
   })
   return()=>{
     unSubscribe

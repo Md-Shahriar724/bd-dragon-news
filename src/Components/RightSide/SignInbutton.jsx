@@ -24,12 +24,12 @@ const SignInbutton = () => {
     return (
         <div>
              <div className="h-40 ">
-        <h2 className="text-xl font-bold  mb-4">SignIn with</h2>
-        <div className="flex items-center border-2 p-2 w-full justify-center gap-2  rounded-md">
+        <h2 className="text-xl font-bold mb-4">SignIn with</h2>
+        <div className="flex items-center border-2 p-2 w-full justify-center gap-2  rounded-md cursor-pointer ">
           <FcGoogle className="text-xl" />
           <button className="text-sm" onClick={()=>handleOnClick(googleLogin)}> signIn with Google</button>
         </div>
-        <div className="flex items-center border-2 p-2 w-full justify-center text-center gap-2 mt-2 rounded-md">
+        <div className="flex items-center border-2 p-2 w-full justify-center text-center gap-2 mt-2 rounded-md cursor-pointer ">
           <BsFacebook className="text-xl" />
           <button className="text-sm" onClick={()=>handleOnClick(gitHubLogin)}> signIn with Faceboook</button>
         </div>

@@ -2,14 +2,14 @@ import { Button } from "keep-react";
 import { SignIn } from "phosphor-react";
 import profile from '../../assets/user.png'
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 // import { useContext } from "react";
 // import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Navbar = () => {
-
-
-  
+  const { users} = useContext(AuthContext)
 
 
   return (
@@ -29,11 +29,17 @@ const Navbar = () => {
             <img className="w-10 h-10" src={profile} alt="" />
             </button>
                 
-            
-          <Button>
+            {
+              users ? <Button>
+              <SignIn size={20} className="mr-1.5 py-0" />
+              Sign Out
+            </Button> :
+            <Button>
             <SignIn size={20} className="mr-1.5 py-0" />
             Sign In
           </Button>
+            }
+           
         </div>
       </div>
     </div>
