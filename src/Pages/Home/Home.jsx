@@ -16,7 +16,7 @@ const Home = () => {
                 <div className="" >
                     <LeftSidenav></LeftSidenav>
                 </div>
-                <div className="col-span-2 border-2">
+                <div className="col-span-2 ">
                     <MainNews></MainNews>
                 </div>
                 <div className="">
